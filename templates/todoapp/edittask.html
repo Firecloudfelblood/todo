@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+Edit your task
+
+<form method="POST" action="/edittask/{{todopk}}/update/">
+    <input type="text" name="task">
+    <input type="submit" value="Update" class="btn btn-success" name="">
+</form>
+
+{% endblock %}
